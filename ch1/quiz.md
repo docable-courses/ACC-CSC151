@@ -1,6 +1,6 @@
 # CSC 151: Chapter 1 Quiz
 
-> ✨ _this is an interactive document, click on the_ ▶ _icon on top right corner of each question to check your answer._
+> ✨ _this is an interactive document, click on the_ ✅ _icon on top right corner of each question to check your answer._
 
 
 1. What term is used to refer to an informal description of a sequence of steps for solving a problem:

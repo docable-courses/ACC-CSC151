@@ -212,7 +212,7 @@ If you remember we talked about `strings` which are created by adding quotations
 
 Use the code below as a playground to modify, run ▶, and experiment with different values.
 
-```java {type: 'script'}
+```java | {type: 'script'}
 public class ExampleTwo {
 
 	public static void main(String[] args) {
