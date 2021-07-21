@@ -4,10 +4,11 @@ We will work to understand the concepts of interfaces, subclasses, superclasses,
 
 ## Inheritance Hierarchies
 
+<div class="mx-auto" style="max-width: 600px;">
 
+![img](imgs/vehicle-class-hierarchy.png)
 
-
-
+</div>
 
 Inheritance is a relationship between more general classes and more specialized classes. The super class is the more general class.  The subclass is more specific and inherits data and behavior from the superclass. This type of relationship is sometimes called an ‘is-a’ relationship.  In the image, you can see a vehicle hierarchy. A car is a vehicle.
 
@@ -30,8 +31,8 @@ Example:
 ```java
 public class SubClassName extends SuperClassName {
     … 
-    //Instance variables
-    //Methods
+    // Instance variables
+    // Methods
     …
 }
 ```
@@ -53,21 +54,21 @@ public void myMethod(int x, int y) {
 }
 ```
 
-If you leave off super in the above implementation, it would create a recursive method.  
+If you leave off super in the above implementation, it would create a recursive method, calling itself.
 
 ## Constructors
 
-When creating the subclass, you also must create the super class. It is also uses the keyword super. Unless, you specify when creating the object, the default constructor will be called. The super keyword also must be the first line in the subclass’s constructor.
+When creating the subclass, you also must create the super class. It is also uses the keyword `super`. Unless, you specify when creating the object, the default constructor will be called. The `super` keyword also must be the first line in the subclass’s constructor.
 
 Example:
 
 ```java
 public myClassName(String x, int y) {
-    super(x);  //Notice it is the first line.  I did not include y
-    //nor did I do super.SuperClass(x).  It is just the word super().
-    … 
-    //More code here
-    …
+    super(x);
+    // Notice it is the first line. I did not include y
+    // nor did I do super.SuperClass(x).  It is just the word super().
+
+    // More code here...
 }
 ```
 
@@ -95,7 +96,6 @@ Let’s create a pretend abstract class, subclass, and driver.
 // Abstract SuperClass
 public abstract class Account {
     public abstract void deductFees();  // no method implementation
-    // ...
 }
 
 // Subclass -- Not abstract
@@ -107,7 +107,7 @@ public class SavingsAccount extends Account {
     // ...
 }
 
-// Driver… inside main
+// Driver, inside main
 Account anAccount;                // OK: Reference to abstract object
 anAccount = new Account();        // Error: Account is abstract
 anAccount = new SavingsAccount(); // Concrete class is OK
@@ -116,11 +116,11 @@ anAccount = null;                 // OK
 
 ## Steps to Developing a Hierarchy
 
+<div class="mx-auto" style="max-width: 250px;">
 
+![img](imgs/hierarchy.png)
 
-
-
-
+</div>
 
 1. List all classes that are a part of the hierarchy.
 2. Organizes the classes into an inheritance hierarchy. Use the chart method (easier).
@@ -149,22 +149,22 @@ public String toString() {
 
 ### equals Method
 
-The equals method checks whether two objects have the same content. (AGAIN – don’t use == with objects. It checks references.) The equals method must declare the same type of parameter as the Object equals method to override it.  This means you must pass in the Object type. Once inside the method, you cast the object to your type.  The example below is a Stamp class.
+The `equals` method checks whether two objects have the same content. (AGAIN – don’t use `==` with objects. It checks references.) The equals method must declare the same type of parameter as the Object equals method to override it. This means you must pass in the Object type. Once inside the method, you cast the object to your type.  The example below is a Stamp class.
 
-Example:
+#### Example:
 
 ```java
 public class Stamp {
     private String color;
     private int value;
-    . . .
+    
     public boolean equals(Object otherObject) {
         if (otherObject == null) {
             return false;
         }
         Stamp other = (Stamp) otherObject;
         return color.equals(other.color) && value == other.value;
-    }  . . .
+    }
 }
 ```
 
@@ -278,6 +278,6 @@ Notice in the example above, the method heading I do not include public or abstr
 The comparable interface will allow you to compare objects. You will implement the compareTo method that we learned about with strings. It is your choice how you handle the returns, as long as it follows this logic:
 
 `a.compareTo(b)`
-- Negative Number: if a comes before b
+- Negative Number: if a comes before b`
 - Zero: if and be are the same
 - Positive Number: if b comes before a
