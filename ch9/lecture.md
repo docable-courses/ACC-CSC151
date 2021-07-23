@@ -1,6 +1,6 @@
 # CSC 151 - Chapter 9:  Inheritance and Interfaces
 
-We will work to understand the concepts of interfaces, subclasses, superclasses, polymorphism, the Object class, and interfaces.    Objects from related classes usually share some common behavior.  Inheritance will allow the programmer to create relationships between specialized and general classes.   When the relationship is established, code can be shared between multiple classes.  
+We will work to understand the concepts of interfaces, subclasses, superclasses, polymorphism, the Object class, and interfaces. Objects from related classes usually share some common behavior.  Inheritance will allow the programmer to create relationships between specialized and general classes.   When the relationship is established, code can be shared between multiple classes.  
 
 ## Inheritance Hierarchies
 
@@ -10,11 +10,36 @@ We will work to understand the concepts of interfaces, subclasses, superclasses,
 
 </div>
 
+```|{type:'youtube'}
+https://www.youtube.com/embed/2p5o-uCtCos
+```
+
+<br>
+
 Inheritance is a relationship between more general classes and more specialized classes. The super class is the more general class.  The subclass is more specific and inherits data and behavior from the superclass. This type of relationship is sometimes called an ‘is-a’ relationship.  In the image, you can see a vehicle hierarchy. A car is a vehicle.
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/M8X0dRXtoB4
+```
+
+<br>
 
 You can always use a subclass object in place of a superclass object. This means you can pass in a Car object into a method that is requesting a Vehicle.
 
 A new modifier, you should be aware of is “protected.”  When a variable or method is protected, it means all subclasses can see the item. (So can anyone else in the package)
+
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/31phFYSMVeA
+```
+
+### Another example
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/aT4bJfQ8Sz8
+```
+
+<br>
 
 ## Implementing Subclasses
 
@@ -37,7 +62,21 @@ public class SubClassName extends SuperClassName {
 }
 ```
 
+### Common Error
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/0stbynl7EPE
+```
+
+<br>
+
 ## Overriding Methods
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/QA_SuZEhcXI
+```
+
+<br>
 
 We have already briefly covered this topic in the notes. Now we will expand on the idea. As you now know, a subclass inherits the methods from the superclass. If you are not happy with the behavior of an inherited method, you can override it by using the same method heading and providing new implementation.
 
@@ -55,6 +94,14 @@ public void myMethod(int x, int y) {
 ```
 
 If you leave off super in the above implementation, it would create a recursive method, calling itself.
+
+### Common Error
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/eqARoOQJHcQ
+```
+
+<br>
 
 ## Constructors
 
@@ -79,6 +126,12 @@ This was briefly mentioned before, but a subclass method can be used when a supe
 To determine, which method was actually called Java does a dynamic method lookup. It will usually get this correct.  
 
 ## Abstract Classes
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/PdvYrgn0XzQ
+```
+
+<br>
 
 There are times when you are creating a class hierarchy that you may not know what the implementation of a method will be in the super class. However, you want to force the subclasses to implement those methods.
 
@@ -131,11 +184,23 @@ anAccount = null;                 // OK
 7. Implement constructors and methods
 8. Constructors objects of different subclasses and process them (driver).
 
+```|{type:'youtube'}
+https://www.youtube.com/embed/rxZ2IB1xL58
+```
+
+<br>
+
 ## The Object class
 
 Every class extends the Object class, even without you programming it in. It is an explicating extends. There are three items I want to look at from the Object class.
 
 ### toString Method
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/7F-VNyyRIQc
+```
+
+<br>
 
 This method should return a string describing or representing the object. It usually is a selection of the instance variables formatting nicely into a single string. When using super and subclasses, I will regularly use the `super.toString()` in my subclass’s `toString` method.
 
@@ -148,6 +213,12 @@ public String toString() {
 ```
 
 ### equals Method
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/Z6ysaq5oRYs
+```
+
+<br>
 
 The `equals` method checks whether two objects have the same content. (AGAIN – don’t use `==` with objects. It checks references.) The equals method must declare the same type of parameter as the Object equals method to override it. This means you must pass in the Object type. Once inside the method, you cast the object to your type.  The example below is a Stamp class.
 
@@ -181,99 +252,75 @@ if (obj instanceof SuperClassObject) {
 
 ## Interfaces
 
+```|{type:'youtube'}
+https://www.youtube.com/embed/zzJWdJ0sLY4
+```
+
+<br>
+
 An interface is a way to force all users to have the same methods and develop a cohesive project. All methods within an interface are abstract. So they contain no code (implementation) other than the method declarations. The method headings contain the return types, names, and parameter variables of each method.
 
-A great feature of interfaces is that you are allowed to implement more than interface in each class. You can use as many as you want. Just separate the names by a comma.
+A great feature of interfaces is that you are allowed to implement more than one interface in each class. You can use as many as you want. Just separate the names by a comma.
 
+```|{type:'youtube'}
+https://www.youtube.com/embed/DLmN-1wDCjM
+```
 
-Declaring
-Implementing
-public interface InterfaceName
-{
+<br>
+
+---
+
+#### Declaring
+
+```java
+public interface InterfaceName {
      Method declarations
 }
-public class ClassName implements InterfaceName1, InterfaceName2
-{
+```
+
+#### Implementing
+
+```java
+public class ClassName implements InterfaceName1, InterfaceName2 {
    Instance Variables
    Constructors
    Methods (including interface’s methods)
-
-} 
-public interface Measurable
-{
-     double getMeasure();
 }
-public class BankAccount implements Measurable
-{
-   private double balance;
-   …
-   public double getMeasure()
-   {
-      return balance;
-   }
-}
+```
 
+---
 
-<table>
+#### Declaring
 
-<tr>
-    <th>
-        Declaring
-    </th>
-    <th>
-        Implementing
-    </th>
-</tr>
-
-<tr>
-    <td>
-        <pre class="hljs language-java">
-public interface InterfaceName {
-    Method declarations
-}
-        </pre>
-    </td>
-
-    <td>
-    <pre>
-    public class ClassName implements InterfaceName1, InterfaceName2 {
-        Instance Variables
-        Constructors
-        Methods (including interface’s methods)
-    }
-    </pre>
-    </td>
-
-
-</tr>
-
-<tr>
-    <td>
-        <pre class="hljs language-java">
+```java
 public interface Measurable {
      double getMeasure();
 }
-        </pre>
-    </td>
+```
 
-    <td>
-    <pre>
-    public class BankAccount implements Measurable {
-        private double balance;
-        public double getMeasure() {
-            return balance;
-        }
-    }
-    </pre>
-    </td>
-</tr>
+#### Implementing
 
-</table>
+```java
+public class BankAccount implements Measurable {
+   private double balance;
+   …
+   public double getMeasure() {
+      return balance;
+   }
+}
+```
 
+---
 
-Notice in the example above, the method heading I do not include public or abstract. This is okay. It is assumed that all of these will be public and abstract, so there is no need to type that in. All interfaces do not have instance variables or static methods. You can declare constant variables in an interface.
+Notice in the example above, the method heading I do not include `public` or `abstract`. This is okay. It is assumed that all of these will be `public` and `abstract`, so there is no need to type that in. All interfaces do not have instance variables or static methods. You can declare constant variables in an interface.
 
 ### Comparable Interface
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/tzm7ZTGvPDg
+```
+
+<br>
 
 The comparable interface will allow you to compare objects. You will implement the compareTo method that we learned about with strings. It is your choice how you handle the returns, as long as it follows this logic:
 
@@ -281,3 +328,44 @@ The comparable interface will allow you to compare objects. You will implement t
 - Negative Number: if a comes before b`
 - Zero: if and be are the same
 - Positive Number: if b comes before a
+
+
+## Example 1: Bank Account
+
+### Bank Account
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/AFwq4VifDGc
+```
+
+### Savings Account
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/VwWwIxF-ZMk
+```
+
+### Driver
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/FiyfFGhoUn8
+```
+
+## Example 2: Tree Interface
+
+### Tree
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/PiN8-R7TgHw
+```
+
+### Pine
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/8YQADxAZmQs
+```
+
+### Driver
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/GFO1nGRhj1I
+```
