@@ -10,6 +10,10 @@ Reading and writing from text files is a very common practice while coding. Java
 
 Let’s start by reading in from a file.  Make sure the actual file you want to read is within the project folder in Eclipse. It should not be in the `src` (source code) folder.
 
+```|{type:'youtube'}
+https://www.youtube.com/embed/OUoCyGf8kCE
+```
+
 The first step is creating a file within the program. This does not actually create a real file at this point. This will help us establish a link between your file and the computer code. To start, create the File object:
 
 ```java
@@ -31,6 +35,10 @@ Scanner in = new Scanner(new File("Input.txt"));
 The variable name of the `File` you created should be inside the parenthesis. The variable name, `in`, is a made up name. We can now use the `Scanner` like we did before to help us read in information.
 
 > Important: To use `File` you need to import `java.io.File` and to use `Scanner` you need to import `java.util.Scanner`.
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/RWFXMlU0VI4
+```
 
 There are a couple new methods to help us read in information: `hasNextDouble()`, `hasNext()`, `hasNextLine()`, `hasNextInt()`. These methods will check to see if there is a value to read in before attempting to read. If you do not check, the program will crash if it tries to read in nothing.
 
@@ -71,6 +79,10 @@ public class Chapter7 {
 
 
 ### Writing
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/_VUFSaKstqc
+```
 
 When creating an output file, you will use the `PrintWriter` class. Three big items to note with file output using `PrintWriter`:
 
@@ -139,6 +151,10 @@ if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
 
 ## Text Input and Output
 
+```|{type:'youtube'}
+https://www.youtube.com/embed/Mq3_7vjALPQ
+```
+
 Text can present problems while reading and writing data. White space characters and punctuation will create issues.
 
 To read in words, you would use the next method. Please assume in the code below that the files and scanners have been set up correctly.
@@ -175,6 +191,10 @@ There are two main ways of dealing with errors, detection and handling. The prog
 
 ### What is an exception?
 
+```|{type:'youtube'}
+https://www.youtube.com/embed/sli09lP2Cfg
+```
+
 An Exception is an unwanted event that interrupts the normal flow of the program. When an exception occurs program execution gets terminated. In such cases we get a system generated error message. The good thing about exceptions is that they can be handled in Java. By handling the exceptions we can provide a meaningful message to the user about the issue rather than a system generated message, which may not be understandable to a user.
 
 There can be several reasons that can cause a program to throw exception. For example: Opening a non-existing file in your program, Network connection problem, bad input data provided by user etc.
@@ -193,6 +213,10 @@ There are two types of exceptions in Java:
 
 - Checked exceptions
 - Unchecked exceptions
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/fJJ8C2lBQUE
+```
 
 #### Checked exceptions
 
@@ -320,4 +344,16 @@ Output:
 ```
 You should not divide a number by zero
 I'm out of try-catch block in Java.
+```
+
+#### Another try/catch exampele
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/ZZhbJbnx26A
+```
+
+#### File Exception example
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/dmGtmoErQOE
 ```

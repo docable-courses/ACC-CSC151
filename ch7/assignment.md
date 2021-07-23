@@ -57,6 +57,14 @@ A menu should appear for the user. When the user selects an option, the output w
 7. Print the original file
 8. Quit
 
+Hint:
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/PmGI3zpISkI
+```
+
+<br>
+
 Write your code here and click on the ✏️ icon to save it.
 
 ```java | {type: 'file', path: '/ACC-CSC151/ch7/Ch7A2.java'}
