@@ -1,12 +1,21 @@
 # CSC 151 - Chapter 5: Arrays and Array Lists
 
-This chapter we will cover arrays, array lists and common practices with both.  At the end of the chapter you should be able to set up and use a one dimensional array, a two dimensional array, and an array list.
+```|{type:'youtube'}
+https://www.youtube.com/embed/FZGJlMS8Gqk
+```
+
+This chapter we will cover arrays, array lists and common practices with both. At the end of the chapter you should be able to set up and use a one dimensional array, a two dimensional array, and an array list.
 
 ## Arrays
 
 The array is a fundamental data type. It is one that will hold multiple values under a single name. All of the data stored in a single array must have the same data type. For example, you can have an array of integers (`int`). As it is with regular variables, you need to declare and initialize the array.
 
+
 ### Declare and Initialize an Array
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/GhO8_oPgQ84
+```
 
 To declare an array you need the _type_ of the array. To declare and array of `double`s:
 
@@ -41,6 +50,10 @@ This will create an array named `moreVals`. It has the `double` data type. The l
 _⚠️ Note: Once an array size is set, by either method, you are stuck with that size. The size is set! If you need more room, you will have to set up a new array and copy the original content over._
 
 ### Use an Array
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/9yMy-tn2Ie4
+```
 
 Once values exist in an array, you can access elements within the array. You can use the _index value_. The index value specifies which slot you are trying to get to within the array (think back to `Strings`). The slot contains an element in the array. I am using the array set up in the previous section.
 
@@ -87,6 +100,10 @@ System.out.println(moreVals[3]);
 
 ---
 
+```|{type:'youtube'}
+https://www.youtube.com/embed/TIkZNt0kXSo
+```
+
 If you try to access an index value outside the array you will get a runtime error. It will crash your program. The array index will always start at zero and the last one will be one less than the length of the array. The error is called a _bounds error_.
 
 Luckily we can access the length of the array very easily. The length of an array is always an `int` (you will never have half a box).
@@ -110,6 +127,10 @@ System.out.println(moreValsLength);
 ```
 
 ### Array References
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/bopa5p4ggvc
+```
 
 The array name itself does not hold any values. The name is pointing to the starting position of the array. So the name is holding a _memory address_.
 
@@ -147,9 +168,17 @@ System.out.println(values[3]);
 
 ### Partially Filled Arrays
 
+```|{type:'youtube'}
+https://www.youtube.com/embed/y-VzWTvDXFc
+```
+
 At times, you might set up an array larger than you need currently. How do you keep track of what has been filled and is empty. There is no built in way to track this. The smartest way to handle this situation, is to fill the array starting at index value zero. Then create a new int variable to keep track of your current size. Each time you add an element increase the current size variable by one.
 
 ## Enhanced `For` Loop
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/iDblJ0AL_zA
+```
 
 Arrays are so commonly used, that Java developed a better for loop to handle arrays. Keep in mind, a regular `for` loop works just fine.
 
@@ -185,6 +214,10 @@ Your textbook covers many algorithms. You should know all of them. I am going to
 
 ### Swapping Elements
 
+```|{type:'youtube'}
+https://www.youtube.com/embed/A_X35hVHLh0
+```
+
 At times you need to sort an array. To do this, you need to swap values without overwriting or losing one of the values. The easiest way to handle this is to create a temporary variable. In the example below pretend we are switching the values located at the 0 and 1 indices. ▶️
 
 ```java | {type: 'script'}
@@ -202,6 +235,10 @@ for (double e : values) {
 ```
 
 ### Copying Arrays
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/-hgJf992zvE
+```
 
 We learned that setting an array equal to another array will just copy over the memory address. Copying over content from one array to another is done frequently enough, that Java created a method to do it for us. You need to import `java.util.Arrays` to use it.
 
@@ -243,7 +280,7 @@ public class Chapter6 {
 
 ### Sorting and Searching
 
-Sorting is now built into Java, you just have to call it.  It will sort in ascending order.
+Sorting is now built into Java, you just have to call it. It will sort in ascending order.
 
 ```java
 Arrays.sort(values);      // Sort all of the array
@@ -251,6 +288,10 @@ Arrays.sort(values, 0, currentSize);  // partially filled
 ```
 
 Like before, make sure you import `java.util.Arrays`.
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/8iQG98gUWWU
+```
 
 Lets see a complete example ▶️
 
@@ -273,7 +314,13 @@ public class Chapter6 {
 }
 ```
 
-### Linear Search
+### Linear and Binary Search
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/Lrd0O3Rssxg
+```
+
+#### Linear Search
 
 There are two basic searches you should be aware of as programmers: _linear_ search and _binary_ search. Linear search will go down an array, one element at a time, checking to see if the element matches your search item. The array does not have to be sorted before searching. The search will visit each element one by one until you find a match or reach the end of the array. By including the found flag, it isn’t a true linear search, but could make it much quicker. It will stop as soon as the item is found.
 
@@ -304,7 +351,7 @@ else {
 
 Change the value of `searchedValue` variable to 40, and re-run the code. The algorith should print "Not Found" in this case.
 
-### Binary Search
+#### Binary Search
 
 Binary search only works when the array is sorted before you start. First, you compare at the middle element in the array to our item. If the element is larger than what we are looking for, we search the smaller half of the array.  If it is smaller, we search the larger half. Keep repeating this process until you find the target value or cannot split the array.
 
@@ -340,11 +387,24 @@ Change the value of `searchedValue` variable to 40, and re-run the code. The alg
 
 ## Arrays and Methods
 
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/QCQdgzUGlmc
+```
+
 Arrays can be passed to and returned from methods. It is okay to have an array parameters. You can modify the elements within an array also.
 
 However, when an array is passed to a method, it is the reference (aka the memory address) that is passed. Not the actual values of the array. So this means there are now two things pointing at the same array. Any changes to an array within a method are permanent even if the array is not returned.  
 
 ## Two Dimensional Arrays
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/hrQH173Q64Q
+```
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/Y3vWgDKQ6UY
+```
 
 Data, at times, may have a two dimensional layout or organization. A photograph is a great example.  To store the data, the most effective way is a two dimensional array. This is also very useful for mathematical matrices. To declare a two dimensional array, you have two methods just like regular arrays.
 
@@ -415,6 +475,10 @@ _Note: You can also create a multidimensional array with varying lengths.  I wou
 
 `ArrayLists` are a built in data structure. It is very similar to arrays with two major exceptions. The `ArrayList` can grow/shrink as needed. There are built in methods to help complete basic tasks. You need to import `java.util.java.util.ArrayList` to use it.
 
+```|{type:'youtube'}
+https://www.youtube.com/embed/09lZVwJL1ps
+```
+
 To declare an array list, you should know what type of data you are adding to the array list. You must use _objects_ and cannot use primitive types (`int`, `float`). There are work arounds for primitive types.
 
 ```java
@@ -470,6 +534,10 @@ public class Chapter6 {
 This is a great way to use the enhanced `for` loop. 
 
 > Quick note: These came out after I learned to program in Java. I default back to the regular `for` loop frequently.
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/YLvhDYpkJJM
+```
 
 The code below just prints out the contents of an array list, using both the regular `for` loop and enhanced version.
 
@@ -556,6 +624,10 @@ public class Chapter6 {
 ### Wrappers and Auto-Boxing
 
 How can we use _primitives_ with array lists? The answer wrappers and auto-boxing.
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/_X4vKP3F6UI
+```
 
 There is a _wrapper_ class that exists for most primitives that exists in Java. The wrapper class is what would be set up as the array list data type. The list is below. An example follows the list.
 
