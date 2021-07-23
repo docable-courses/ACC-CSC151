@@ -7,7 +7,7 @@ If submitting code, please put each question in its own class. Make sure your in
 - Sum of all even numbers between 1 and `n` (inclusive)
 - Sum of all odd numbers between 1 and `n` (inclusive)
 
-```java | {type: 'file', path: '/ljkassler/ch3/Ch4A1.java'}
+```java | {type: 'file', path: '/ACC-CSC151/ch3/Ch4A1.java'}
 // reminder add your imports here...
 
 public class Ch4A1 {

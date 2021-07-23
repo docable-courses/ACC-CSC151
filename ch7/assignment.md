@@ -5,7 +5,7 @@
 Write a program that reads in a file containing text. Read each line and send it to an output file (different file than input). The output line should include the _line numbers_.
 
 Use these paths for your input and output files:
-- input file: `/ljkassler/ch7/files/assignment1.txt`
+- input file: `/ACC-CSC151/ch7/files/assignment1.txt`
 - output file: `/tmp/output.txt`
 
 expected output file:
@@ -38,11 +38,11 @@ cat /tmp/output.txt
 ```
 
 ## Problem 2: Jabberwocky
-_**Note**: In this program, we will be using the Jabberwocky text file, with path = `/ljkassler/ch7/files/Jabberwocky.txt`._
+_**Note**: In this program, we will be using the Jabberwocky text file, with path = `/ACC-CSC151/ch7/files/Jabberwocky.txt`._
 
 ### Description
 
-This application program should read in words/lines from a text file named at `/ljkassler/ch7/files/Jabberwocky.txt`. The program should read in the poem once. You can pick your storage choice (array list or list). You should be using methods.
+This application program should read in words/lines from a text file named at `/ACC-CSC151/ch7/files/Jabberwocky.txt`. The program should read in the poem once. You can pick your storage choice (array list or list). You should be using methods.
 
 A menu should appear for the user. When the user selects an option, the output will be displayed. Then, the menu should reappear.
 
@@ -59,7 +59,7 @@ A menu should appear for the user. When the user selects an option, the output w
 
 Write your code here and click on the ✏️ icon to save it.
 
-```java | {type: 'file', path: '/ljkassler/ch7/Ch7A2.java'}
+```java | {type: 'file', path: '/ACC-CSC151/ch7/Ch7A2.java'}
 // hint: don't forget imports...
 
 public class Ch7A2 {
@@ -72,7 +72,7 @@ public class Ch7A2 {
 }
 ```
 
-Then run `java /ljkassler/ch7/Ch7A2.java` in the terminal window below to test it:
+Then run `java /ACC-CSC151/ch7/Ch7A2.java` in the terminal window below to test it:
 
 ```bash | {type: 'terminal'}
 ```

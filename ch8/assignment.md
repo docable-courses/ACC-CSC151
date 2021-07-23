@@ -34,7 +34,7 @@ public class Ch8A1 {
 
 Write your code here and click on the ✏️ icon to save it.
 
-```java | {type: 'file', path: '/ljkassler/ch8/Ch8A2.java'}
+```java | {type: 'file', path: '/ACC-CSC151/ch8/Ch8A2.java'}
 // hint: don't forget imports...
 
 public class Ch8A2 {
@@ -50,7 +50,7 @@ public class Ch8A2 {
 }
 ```
 
-Then run `java /ljkassler/ch8/Ch8A2.java` in the terminal window below to test it:
+Then run `java /ACC-CSC151/ch8/Ch8A2.java` in the terminal window below to test it:
 
 ```bash | {type: 'terminal'}
 ```

@@ -56,7 +56,7 @@ import java.util.Scanner; // impoer Scanner
 public class Chapter7 {
 
 	public static void main(String [] args) {
-      File inputFile = new File("/ljkassler/ch7/files/input.txt");
+      File inputFile = new File("/ACC-CSC151/ch7/files/input.txt");
       Scanner in = new Scanner(inputFile);
       
       while (in.hasNextDouble()) {

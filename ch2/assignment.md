@@ -13,7 +13,7 @@ If submitting code, please put each question in its own class. Make sure your in
 
     > Hint: Don’t forget to look at the math class for some help.
 
-```java | {type: 'file', path: '/ljkassler/ch2/Ch2A1.java'}
+```java | {type: 'file', path: '/ACC-CSC151/ch2/Ch2A1.java'}
 // reminder add your imports here...
 
 public class Ch2A1 {
@@ -41,7 +41,7 @@ To test running your code, type `java Ch2A1.java` in the terminal window below:
     - yards
 
 
-```java | {type: 'file', path: '/ljkassler/ch2/Ch2A2.java'}
+```java | {type: 'file', path: '/ACC-CSC151/ch2/Ch2A2.java'}
 // reminder add your imports here...
 
 public class Ch2A2 {
@@ -68,7 +68,7 @@ Please enter your name:  Leslie T Hope
 Output: lthope
 ```
 
-```java | {type: 'file', path: '/ljkassler/ch2/Ch2A3.java'}
+```java | {type: 'file', path: '/ACC-CSC151/ch2/Ch2A3.java'}
 // reminder add your imports here...
 
 public class Ch2A3 {
