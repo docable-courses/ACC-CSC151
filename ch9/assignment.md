@@ -10,97 +10,97 @@ https://www.youtube.com/embed/zKuS7Dulees
 
 1. Make a class `Employee` with a `name` and `salary`. Make a class `Manager` inherit from `Employee`. Add a String instance variable, named `department`. Supply a method `toString` that returns the manager's `name`, `department`, and `salary`. Make a class `Executive` inherit from `Manager`. The execute also has a `title`, like CFO. Supply an appropriate `toString` methods for all relevant information. Supply a test program that test these classes and methods.
 
-Write the `Employee` class here:
+    Write the `Employee` class here:
 
-```java | {type: 'file', path: '/ACC-CSC151/ch9/Employee.java'}
-package com.CSC151.ch9.assignments;
+    ```java | {type: 'file', path: '/ACC-CSC151/ch9/Employee.java'}
+    package com.CSC151.ch9.assignments;
 
-// TODO: Add your code here...
-public class Employee {
-    private String name;
-    private double salary;
+    // TODO: Add your code here...
+    public class Employee {
+        private String name;
+        private double salary;
 
-    Employee (String name, double salary) {
-        this.name = name;
-        this.salary = salary;
+        Employee (String name, double salary) {
+            this.name = name;
+            this.salary = salary;
+        }
+
+        public String getName() {
+            return this.name;
+        }
+
+        public double getSalary() {
+            return this.salary;
+        }
     }
+    ```
 
-    public String getName() {
-        return this.name;
+    Write the `Manager` class here:
+
+    ```java | {type: 'file', path: '/ACC-CSC151/ch9/Manager.java'}
+    package com.CSC151.ch9.assignments;
+
+    // TODO: Add your code here...
+    public class Manager extends Employee {
+        private String department;
+
+        Manager (String name, double salary, String department) {
+            super(name, salary);
+            this.department = department;
+        }
+
+        public String toString() {
+            return this.getName() + " from " + this.getDepartment() + " department, with salary of $" + Double.toString(this.getSalary());
+        }
+
+        public String getDepartment() {
+            return this.department;
+        }
     }
+    ```
 
-    public double getSalary() {
-        return this.salary;
+    Write the `Executive` class here:
+
+    ```java | {type: 'file', path: '/ACC-CSC151/ch9/Executive.java'}
+    package com.CSC151.ch9.assignments;
+
+    // TODO: Add your code here...
+    public class Executive extends Manager {
+        private String title;
+
+        Executive (String name, double salary, String department, String title) {
+            super(name, salary, department);
+            this.title = title;
+        }
+
+        public String toString() {
+            return this.getName() + " " + this.title + " of " + this.getDepartment() + " with salary of $" + Double.toString(this.getSalary());
+        }
+
     }
-}
-```
+    ```
 
-Write the `Manager` class here:
+    Write the `Driver` class here:
 
-```java | {type: 'file', path: '/ACC-CSC151/ch9/Manager.java'}
-package com.CSC151.ch9.assignments;
+    ```java | {type: 'file', path: '/ACC-CSC151/ch9/Driver.java'}
+    package com.CSC151.ch9.assignments;
 
-// TODO: Add your code here...
-public class Manager extends Employee {
-    private String department;
+    // TODO: Add your code here...
+    public class Driver {
 
-    Manager (String name, double salary, String department) {
-        super(name, salary);
-        this.department = department;
+        public static void main(String [] args) {
+            // Add statements here...
+            Executive elon = new Executive("Elon", 67000000000.0, "Engineering", "CEO");
+            System.out.println(elon.toString());
+        }
     }
+    ```
 
-    public String toString() {
-        return this.getName() + " from " + this.getDepartment() + " department, with salary of $" + Double.toString(this.getSalary());
-    }
+    And finally run your code by clicking on the ▶ button below. This command will compile these 4 java files and run them (This is how eclipse IDE runs your code internally!).
 
-    public String getDepartment() {
-        return this.department;
-    }
-}
-```
-
-Write the `Executive` class here:
-
-```java | {type: 'file', path: '/ACC-CSC151/ch9/Executive.java'}
-package com.CSC151.ch9.assignments;
-
-// TODO: Add your code here...
-public class Executive extends Manager {
-    private String title;
-
-    Executive (String name, double salary, String department, String title) {
-        super(name, salary, department);
-        this.title = title;
-    }
-
-    public String toString() {
-        return this.getName() + " " + this.title + " of " + this.getDepartment() + " with salary of $" + Double.toString(this.getSalary());
-    }
-
-}
-```
-
-Write the `Driver` class here:
-
-```java | {type: 'file', path: '/ACC-CSC151/ch9/Driver.java'}
-package com.CSC151.ch9.assignments;
-
-// TODO: Add your code here...
-public class Driver {
-
-    public static void main(String [] args) {
-        // Add statements here...
-        Executive elon = new Executive("Elon", 67000000000.0, "Engineering", "CEO");
-        System.out.println(elon.toString());
-	}
-}
-```
-
-And finally run your code by clicking on the ▶ button below. This command will compile these 4 java files and run them (This is how eclipse IDE runs your code internally!).
-
-```bash | {type: 'command'}
-javac -d . *.java && java com.CSC151.ch2.assignments.Driver
-```
+    ```bash | {type: 'command'}
+    javac -d . *.java && java com.CSC151.ch2.assignments.Driver
+    ```
 
 ---
 
