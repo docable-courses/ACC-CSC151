@@ -90,7 +90,7 @@ https://www.youtube.com/embed/zKuS7Dulees
 
         public static void main(String [] args) {
             // Add statements here...
-            Executive elon = new Executive("Elon", 67000000000.0, "Engineering", "CEO");
+            Executive elon = new Executive("Elon", 67000000000.0, "Engineering", "Technoking");
             System.out.println(elon.toString());
         }
     }
@@ -99,7 +99,7 @@ https://www.youtube.com/embed/zKuS7Dulees
     And finally run your code by clicking on the ▶ button below. This command will compile these 4 java files and run them (This is how eclipse IDE runs your code internally!).
 
     ```bash | {type: 'command'}
-    cd files && javac -d . *.java && java com.CSC151.ch2.assignment1.Driver
+    cd files && javac -d . *.java && java com.CSC151.ch9.assignment1.Driver
     ```
 
 ---
@@ -181,5 +181,5 @@ https://www.youtube.com/embed/zKuS7Dulees
     Finally run your code by clicking on the ▶ button below. This command will compile these 4 java files and run them (This is how eclipse IDE runs your code internally!).
 
     ```bash | {type: 'command'}
-    cd files && javac -d . *.java && java com.CSC151.ch2.assignment2.Zoo
+    cd files && javac -d . *.java && java com.CSC151.ch9.assignment2.Zoo
     ```
