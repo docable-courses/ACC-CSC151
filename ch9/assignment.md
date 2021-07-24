@@ -13,7 +13,7 @@ https://www.youtube.com/embed/zKuS7Dulees
 Write the `Employee` class here:
 
 ```java | {type: 'file', path: '/ACC-CSC151/ch9/Employee.java'}
-package com.ACC-CSC151.ch2.assignments;
+package com.CSC151.ch2.assignments;
 
 // TODO: Add your code here...
 public class Employee {
@@ -24,13 +24,21 @@ public class Employee {
         this.name = name;
         this.salary = salary;
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public double getSalary() {
+        return this.salary;
+    }
 }
 ```
 
 Write the `Manager` class here:
 
 ```java | {type: 'file', path: '/ACC-CSC151/ch9/Manager.java'}
-package com.ACC-CSC151.ch2.assignments;
+package com.CSC151.ch2.assignments;
 
 // TODO: Add your code here...
 public class Manager extends Employee {
@@ -42,8 +50,11 @@ public class Manager extends Employee {
     }
 
     public String toString() {
-        return this.name + " from " + this.department + " department, with salary of $" + this.salary;
+        return this.getName() + " from " + this.getDepartment() + " department, with salary of $" + Double.toString(this.getSalary());
+    }
 
+    public String getDepartment() {
+        return this.department;
     }
 }
 ```
@@ -51,7 +62,7 @@ public class Manager extends Employee {
 Write the `Executive` class here:
 
 ```java | {type: 'file', path: '/ACC-CSC151/ch9/Executive.java'}
-package com.ACC-CSC151.ch2.assignments;
+package com.CSC151.ch2.assignments;
 
 // TODO: Add your code here...
 public class Executive extends Manager {
@@ -63,27 +74,32 @@ public class Executive extends Manager {
     }
 
     public String toString() {
-        return this.name + " " + title + " of " + this.department + " with salary of $" + this.salary;
+        return this.getName() + " " + this.title + " of " + this.getDepartment() + " with salary of $" + Double.toString(this.getSalary());
     }
+
 }
 ```
 
 Write the `Driver` class here:
 
 ```java | {type: 'file', path: '/ACC-CSC151/ch9/Driver.java'}
-package com.ACC-CSC151.ch2.assignments;
+package com.CSC151.ch2.assignments;
 
 // TODO: Add your code here...
 public class Driver {
-    Executive elon = new Executive("Elon", 67000000000, "Engineering", "CEO");
-    System.out.println(elon.toString());
+
+    public static void main(String [] args) {
+        // Add statements here...
+        Executive elon = new Executive("Elon", 67000000000.0, "Engineering", "CEO");
+        System.out.println(elon.toString());
+	}
 }
 ```
 
 And finally run your code by clicking on the ▶ button below. This command will compile these 4 java files and run them (This is how eclipse IDE runs your code internally!).
 
 ```bash | {type: 'command'}
-cd /ACC-CSC151/ch9 && javac -d *.java && java Driver
+javac -d . *.java && java com.CSC151.ch2.assignments.Driver
 ```
 
 ---
