@@ -13,7 +13,7 @@ https://www.youtube.com/embed/zKuS7Dulees
 Write the `Employee` class here:
 
 ```java | {type: 'file', path: '/ACC-CSC151/ch9/Employee.java'}
-package com.CSC151.ch2.assignments;
+package com.CSC151.ch9.assignments;
 
 // TODO: Add your code here...
 public class Employee {
@@ -38,7 +38,7 @@ public class Employee {
 Write the `Manager` class here:
 
 ```java | {type: 'file', path: '/ACC-CSC151/ch9/Manager.java'}
-package com.CSC151.ch2.assignments;
+package com.CSC151.ch9.assignments;
 
 // TODO: Add your code here...
 public class Manager extends Employee {
@@ -62,7 +62,7 @@ public class Manager extends Employee {
 Write the `Executive` class here:
 
 ```java | {type: 'file', path: '/ACC-CSC151/ch9/Executive.java'}
-package com.CSC151.ch2.assignments;
+package com.CSC151.ch9.assignments;
 
 // TODO: Add your code here...
 public class Executive extends Manager {
@@ -83,7 +83,7 @@ public class Executive extends Manager {
 Write the `Driver` class here:
 
 ```java | {type: 'file', path: '/ACC-CSC151/ch9/Driver.java'}
-package com.CSC151.ch2.assignments;
+package com.CSC151.ch9.assignments;
 
 // TODO: Add your code here...
 public class Driver {
