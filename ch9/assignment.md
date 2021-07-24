@@ -151,7 +151,6 @@ https://www.youtube.com/embed/zKuS7Dulees
     ```java | {type: 'file', path: '/ACC-CSC151/ch9/files/MyAnimal.java'}
     package com.CSC151.ch9.assignment2;
 
-    // TODO: Add your code here...
     public class MyAnimal {
         // TODO: implement your superclass animal. 
         // For this assignment DO NOT change the class *name* from "MyAnimal"
@@ -162,9 +161,8 @@ https://www.youtube.com/embed/zKuS7Dulees
     ```java | {type: 'file', path: '/ACC-CSC151/ch9/files/MyAnimalSubclass1.java'}
     package com.CSC151.ch9.assignment2;
 
-    // TODO: Add your code here...
     public class MyAnimalSubclass1 {
-        // TODO: implement your superclass animal. 
+        // TODO: implement your subclass animal. 
         // For this assignment DO NOT change the class *name* from "MyAnimalSubclass1"
         
     }
@@ -173,9 +171,8 @@ https://www.youtube.com/embed/zKuS7Dulees
     ```java | {type: 'file', path: '/ACC-CSC151/ch9/files/MyAnimalSubclass2.java'}
     package com.CSC151.ch9.assignment2;
 
-    // TODO: Add your code here...
     public class MyAnimalSubclass2 {
-        // TODO: implement your superclass animal. 
+        // TODO: implement your subclass animal. 
         // For this assignment DO NOT change the class *name* from "MyAnimalSubclass2"
         
     }
