@@ -12,8 +12,8 @@ https://www.youtube.com/embed/zKuS7Dulees
 
     Write the `Employee` class here:
 
-    ```java | {type: 'file', path: '/ACC-CSC151/ch9/Employee.java'}
-    package com.CSC151.ch9.assignments;
+    ```java | {type: 'file', path: '/ACC-CSC151/ch9/files/Employee.java'}
+    package com.CSC151.ch9.assignment1;
 
     // TODO: Add your code here...
     public class Employee {
@@ -37,8 +37,8 @@ https://www.youtube.com/embed/zKuS7Dulees
 
     Write the `Manager` class here:
 
-    ```java | {type: 'file', path: '/ACC-CSC151/ch9/Manager.java'}
-    package com.CSC151.ch9.assignments;
+    ```java | {type: 'file', path: '/ACC-CSC151/ch9/files/Manager.java'}
+    package com.CSC151.ch9.assignment1;
 
     // TODO: Add your code here...
     public class Manager extends Employee {
@@ -61,8 +61,8 @@ https://www.youtube.com/embed/zKuS7Dulees
 
     Write the `Executive` class here:
 
-    ```java | {type: 'file', path: '/ACC-CSC151/ch9/Executive.java'}
-    package com.CSC151.ch9.assignments;
+    ```java | {type: 'file', path: '/ACC-CSC151/ch9/files/Executive.java'}
+    package com.CSC151.ch9.assignment1;
 
     // TODO: Add your code here...
     public class Executive extends Manager {
@@ -82,8 +82,8 @@ https://www.youtube.com/embed/zKuS7Dulees
 
     Write the `Driver` class here:
 
-    ```java | {type: 'file', path: '/ACC-CSC151/ch9/Driver.java'}
-    package com.CSC151.ch9.assignments;
+    ```java | {type: 'file', path: '/ACC-CSC151/ch9/files/Driver.java'}
+    package com.CSC151.ch9.assignment1;
 
     // TODO: Add your code here...
     public class Driver {
@@ -99,7 +99,7 @@ https://www.youtube.com/embed/zKuS7Dulees
     And finally run your code by clicking on the ▶ button below. This command will compile these 4 java files and run them (This is how eclipse IDE runs your code internally!).
 
     ```bash | {type: 'command'}
-    javac -d . *.java && java com.CSC151.ch2.assignments.Driver
+    cd files && javac -d . *.java && java com.CSC151.ch2.assignment1.Driver
     ```
 
 ---
@@ -118,5 +118,71 @@ https://www.youtube.com/embed/zKuS7Dulees
     - Your subclass
 
     ```java
+    package com.CSC151.ch9.assignment2;
 
+    public interface Animal {
+        void move(String t);  // Type of movement is passed in
+        double getWeight();  // returns weight
+        void updateWeight(double x);
+        void addHabitat(String y);
+        String getHabitat();  // returns Habitat Type
+        String LatinName();  // returns Animal's Latin/Scientific Name
+        String toString();
+    }
+    ```
+
+    ```java | {type: 'file', path: '/ACC-CSC151/ch9/files/Zoo.java'}
+    package com.CSC151.ch9.assignment2;
+    import java.util.ArrayList;
+
+    public class Zoo {
+        public static void main(String[] args) {
+            ArrayList<Animal> myAnimals = new ArrayList<Animal>();
+            
+            // Add Your animals  - super class and subclasses
+        
+            for (int i = 0; i < myAnimals.size(); i++) {
+                myAnimals.get(i).toString();
+            }
+        }
+    }
+    ```
+
+    ```java | {type: 'file', path: '/ACC-CSC151/ch9/files/MyAnimal.java'}
+    package com.CSC151.ch9.assignment2;
+
+    // TODO: Add your code here...
+    public class MyAnimal {
+        // TODO: implement your superclass animal. 
+        // For this assignment DO NOT change the class *name* from "MyAnimal"
+
+    }
+    ```
+
+    ```java | {type: 'file', path: '/ACC-CSC151/ch9/files/MyAnimalSubclass1.java'}
+    package com.CSC151.ch9.assignment2;
+
+    // TODO: Add your code here...
+    public class MyAnimalSubclass1 {
+        // TODO: implement your superclass animal. 
+        // For this assignment DO NOT change the class *name* from "MyAnimalSubclass1"
+        
+    }
+    ```
+
+    ```java | {type: 'file', path: '/ACC-CSC151/ch9/files/MyAnimalSubclass2.java'}
+    package com.CSC151.ch9.assignment2;
+
+    // TODO: Add your code here...
+    public class MyAnimalSubclass2 {
+        // TODO: implement your superclass animal. 
+        // For this assignment DO NOT change the class *name* from "MyAnimalSubclass2"
+        
+    }
+    ```
+
+    Finally run your code by clicking on the ▶ button below. This command will compile these 4 java files and run them (This is how eclipse IDE runs your code internally!).
+
+    ```bash | {type: 'command'}
+    cd files && javac -d . *.java && java com.CSC151.ch2.assignment2.Zoo
     ```
