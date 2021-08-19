@@ -177,6 +177,10 @@ This would start at the top until it found a line that was true first. Once a tr
 
 A switch statement is an else if statement in a different format. I find that this isn’t a short cut, but some programmers like it. _DO NOT forget the `break`_. If you forget the `break` statement, the code will continue executing until it finds a `brake` statement or it reaches the end. You can use a switch statement with `ints`, `characters`, and `Strings`.
 
+```|{type:'youtube'}
+https://www.youtube.com/embed/y-vg9S11ea4
+```
+
 Try running ▶️ this example, modify this code and experiment with it (want to see what happens if you had forgotten `break`?).
 
 ```java | {type: 'script'}
@@ -304,3 +308,15 @@ https://www.youtube.com/embed/98HwR3qRsS8
 ## Input Validation
 
 Robust programming is making a huge impact in industry. Can your program handle what the user is throwing it’s way? You can use the if statement to do input validation. For example, you can use it to prevent a divide by zero error or if the data is within a valid range.
+
+## Example 1: Primary Colors Example
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/8z3O0IIjp8c
+```
+
+## Example 2: Grades Example
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/yCcYZgl_vLo
+```

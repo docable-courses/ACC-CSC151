@@ -234,6 +234,12 @@ for (double e : values) {
 }
 ```
 
+#### Example: Array Name Swap
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/RrYJYU2C884
+```
+
 ### Copying Arrays
 
 ```|{type:'youtube'}
@@ -320,6 +326,12 @@ public class Chapter6 {
 https://www.youtube.com/embed/Lrd0O3Rssxg
 ```
 
+#### Example: Binary Search Code Example
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/if32M-oI_8c
+```
+
 #### Linear Search
 
 There are two basic searches you should be aware of as programmers: _linear_ search and _binary_ search. Linear search will go down an array, one element at a time, checking to see if the element matches your search item. The array does not have to be sorted before searching. The search will visit each element one by one until you find a match or reach the end of the array. By including the found flag, it isn’t a true linear search, but could make it much quicker. It will stop as soon as the item is found.
@@ -350,6 +362,12 @@ else {
 ```
 
 Change the value of `searchedValue` variable to 40, and re-run the code. The algorith should print "Not Found" in this case.
+
+#### Example: Linear Search Integers Example
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/3h6zuh70-IM
+```
 
 #### Binary Search
 
@@ -619,6 +637,12 @@ public class Chapter6 {
         System.out.println(listTwo.size());
     }
 }
+```
+
+#### Example:  ArrayList Linear Search Example
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/dCGA6bXEP0s
 ```
 
 ### Wrappers and Auto-Boxing

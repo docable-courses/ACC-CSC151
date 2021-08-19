@@ -49,6 +49,12 @@ More formally, here is the flow of execution for a `while` statement:
 
 All the Boolean expressions and operators we learned last time are valid.  So, we can still use and, or, not, as well as the greater than/less than/equal chart.
 
+### Basic While Loop Example
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/FtAGH9aq0Y0
+```
+
 ### Infinite loops
 
 ```|{type:'youtube'}
@@ -176,6 +182,12 @@ for (int counter = 1; counter <= 10; counter++) {
 }
 ```
 
+### For Loop Example
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/zOAXb1NzdF0
+```
+
 ## The Do Loop
 
 ```|{type:'youtube'}
@@ -294,3 +306,15 @@ The dollar sign `$` represents the outer loops, which executes three times.  The
 | 3       | ~~2~~ 3 | $      | Inner to Outer               |
 | 3       | ~~3~~   |        | Top Out Outer but Fails.     |
 
+
+### Example: Nested Loop Example
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/fvqiqL7QbY8
+```
+
+### Example: Data Validation Example
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/Mh9mIf3LiH8
+```

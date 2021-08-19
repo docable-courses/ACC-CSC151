@@ -121,6 +121,12 @@ public class MyClass {
 
 You can click on the ▶️ button to run this code. Feel free to make changes and re-run with this code, to completely understand how it works.
 
+#### Example: Method Example
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/bWjBiktLXSo
+```
+
 ## Parameters
 
 ```|{type:'youtube'}
@@ -201,6 +207,12 @@ This is a huge concept to understand. Scope is where a variable exists within co
 
 A _local variable_ is a variable defined within a method. It only exist within that block of code. The same variable name can be used within another block of code without any complications.
 
+#### Example: Method Calling Method Example
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/_No3jMWVN-4
+```
+
 ### Scope Example
 
 ```|{type:'youtube'}
@@ -218,6 +230,10 @@ https://www.youtube.com/embed/rQ4XiXedJjQ
 A recursive method is a method that calls itself. A recursive method contains a condition statement that will terminate the self call. When the method is called again, the input will need to be different than the starting parameter.
 
 #### Example
+
+```|{type:'youtube'}
+https://www.youtube.com/embed/AaOEzsaqxWo
+```
 
 ```java
 public static void printTriangles(int side) {
